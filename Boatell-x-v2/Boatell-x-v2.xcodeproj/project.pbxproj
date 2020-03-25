@@ -13,6 +13,9 @@
 		455F49E824133E5500EEE574 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 455F49E724133E5500EEE574 /* Assets.xcassets */; };
 		455F49EB24133E5500EEE574 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 455F49E924133E5500EEE574 /* LaunchScreen.storyboard */; };
 		455F49F3241346B200EEE574 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F49F2241346B200EEE574 /* LoginViewController.swift */; };
+		456A69A9241C6EA400EABE0D /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A69A8241C6EA400EABE0D /* ServicesViewController.swift */; };
+		456A69AD241C712600EABE0D /* PartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A69AC241C712600EABE0D /* PartController.swift */; };
+		456A69B0241C715300EABE0D /* Part.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A69AF241C715300EABE0D /* Part.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		455F49EA24133E5500EEE574 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		455F49EC24133E5500EEE574 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		455F49F2241346B200EEE574 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		456A69A8241C6EA400EABE0D /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
+		456A69AC241C712600EABE0D /* PartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartController.swift; sourceTree = "<group>"; };
+		456A69AF241C715300EABE0D /* Part.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,9 @@
 		455F49DD24133E5300EEE574 /* Boatell-x-v2 */ = {
 			isa = PBXGroup;
 			children = (
+				456A69AE241C714500EABE0D /* Model */,
+				456A69AB241C711600EABE0D /* Model Controller */,
+				456A69AA241C6EAB00EABE0D /* View Controllers */,
 				455F49DE24133E5300EEE574 /* AppDelegate.swift */,
 				455F49E024133E5300EEE574 /* SceneDelegate.swift */,
 				455F49E424133E5300EEE574 /* Main.storyboard */,
@@ -65,6 +74,30 @@
 				455F49F2241346B200EEE574 /* LoginViewController.swift */,
 			);
 			path = "Boatell-x-v2";
+			sourceTree = "<group>";
+		};
+		456A69AA241C6EAB00EABE0D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				456A69A8241C6EA400EABE0D /* ServicesViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		456A69AB241C711600EABE0D /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				456A69AC241C712600EABE0D /* PartController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		456A69AE241C714500EABE0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				456A69AF241C715300EABE0D /* Part.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +173,10 @@
 			files = (
 				455F49F3241346B200EEE574 /* LoginViewController.swift in Sources */,
 				455F49DF24133E5300EEE574 /* AppDelegate.swift in Sources */,
+				456A69A9241C6EA400EABE0D /* ServicesViewController.swift in Sources */,
 				455F49E124133E5300EEE574 /* SceneDelegate.swift in Sources */,
+				456A69B0241C715300EABE0D /* Part.swift in Sources */,
+				456A69AD241C712600EABE0D /* PartController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T9N7S9647J;
 				INFOPLIST_FILE = "Boatell-x-v2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +339,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T9N7S9647J;
 				INFOPLIST_FILE = "Boatell-x-v2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

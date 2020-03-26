@@ -23,14 +23,14 @@ class ServicesViewController: UIViewController {
          let partController = PartController()
         
         let data = [
-              CustomData(title: "title", image: #imageLiteral(resourceName: "Gadget") , url: "part"),
+              CustomData(title: "title", image: #imageLiteral(resourceName: "Lights") , url: "part"),
+              CustomData(title: "title", image: #imageLiteral(resourceName: "Cut") , url: "part"),
+              CustomData(title: "title", image: #imageLiteral(resourceName: "Cut") , url: "part"),
+              CustomData(title: "title", image: #imageLiteral(resourceName: "Cut") , url: "part"),
+              CustomData(title: "title", image: #imageLiteral(resourceName: "Cut") , url: "part"),
+              CustomData(title: "title", image: #imageLiteral(resourceName: "Cut") , url: "part"),
               CustomData(title: "title", image: #imageLiteral(resourceName: "Cut") , url: "part")
-                
-                
-                
-               
-                
-                
+            
                 ]
         
        
@@ -47,13 +47,13 @@ class ServicesViewController: UIViewController {
         override func viewDidLoad() {
             super.viewDidLoad()
 
+            // FIXME: Add these to one call to avoid repeat setup
             view.addSubview(collectionView)
             collectionView.backgroundColor = .clear
-            collectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 245).isActive = true
+            collectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 260).isActive = true
             collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10).isActive = true
             collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10).isActive = true
             collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -0).isActive = true
-            
     //        collectionView.heightAnchor.constraint(equalTo: collectionView.widthAnchor, multiplier: 0.5).isActive = true
     //
             collectionView.delegate = self

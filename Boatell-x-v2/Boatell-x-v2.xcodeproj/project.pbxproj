@@ -16,6 +16,9 @@
 		456A69A9241C6EA400EABE0D /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A69A8241C6EA400EABE0D /* ServicesViewController.swift */; };
 		456A69AD241C712600EABE0D /* PartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A69AC241C712600EABE0D /* PartController.swift */; };
 		456A69B0241C715300EABE0D /* Part.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A69AF241C715300EABE0D /* Part.swift */; };
+		45DAD45B242D8AE000A646DE /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DAD45A242D8AE000A646DE /* UserProfileViewController.swift */; };
+		45DAD45E242D8B5A00A646DE /* ServiceHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DAD45D242D8B5A00A646DE /* ServiceHistoryTableViewCell.swift */; };
+		45DAD460242D8E7100A646DE /* RegisterProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DAD45F242D8E7100A646DE /* RegisterProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		456A69A8241C6EA400EABE0D /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
 		456A69AC241C712600EABE0D /* PartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartController.swift; sourceTree = "<group>"; };
 		456A69AF241C715300EABE0D /* Part.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part.swift; sourceTree = "<group>"; };
+		45DAD45A242D8AE000A646DE /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		45DAD45D242D8B5A00A646DE /* ServiceHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		45DAD45F242D8E7100A646DE /* RegisterProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,8 @@
 		455F49DD24133E5300EEE574 /* Boatell-x-v2 */ = {
 			isa = PBXGroup;
 			children = (
+				45DAD45C242D8B3700A646DE /* Views */,
+				45DAD459242D8AB400A646DE /* User View Controllers */,
 				456A69AE241C714500EABE0D /* Model */,
 				456A69AB241C711600EABE0D /* Model Controller */,
 				456A69AA241C6EAB00EABE0D /* View Controllers */,
@@ -71,7 +79,6 @@
 				455F49E724133E5500EEE574 /* Assets.xcassets */,
 				455F49E924133E5500EEE574 /* LaunchScreen.storyboard */,
 				455F49EC24133E5500EEE574 /* Info.plist */,
-				455F49F2241346B200EEE574 /* LoginViewController.swift */,
 			);
 			path = "Boatell-x-v2";
 			sourceTree = "<group>";
@@ -98,6 +105,24 @@
 				456A69AF241C715300EABE0D /* Part.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		45DAD459242D8AB400A646DE /* User View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				45DAD45A242D8AE000A646DE /* UserProfileViewController.swift */,
+				455F49F2241346B200EEE574 /* LoginViewController.swift */,
+				45DAD45F242D8E7100A646DE /* RegisterProfileViewController.swift */,
+			);
+			path = "User View Controllers";
+			sourceTree = "<group>";
+		};
+		45DAD45C242D8B3700A646DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				45DAD45D242D8B5A00A646DE /* ServiceHistoryTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,10 +198,13 @@
 			files = (
 				455F49F3241346B200EEE574 /* LoginViewController.swift in Sources */,
 				455F49DF24133E5300EEE574 /* AppDelegate.swift in Sources */,
+				45DAD45B242D8AE000A646DE /* UserProfileViewController.swift in Sources */,
 				456A69A9241C6EA400EABE0D /* ServicesViewController.swift in Sources */,
 				455F49E124133E5300EEE574 /* SceneDelegate.swift in Sources */,
 				456A69B0241C715300EABE0D /* Part.swift in Sources */,
+				45DAD45E242D8B5A00A646DE /* ServiceHistoryTableViewCell.swift in Sources */,
 				456A69AD241C712600EABE0D /* PartController.swift in Sources */,
+				45DAD460242D8E7100A646DE /* RegisterProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

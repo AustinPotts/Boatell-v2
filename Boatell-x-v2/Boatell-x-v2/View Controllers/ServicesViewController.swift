@@ -24,12 +24,13 @@ class ServicesViewController: UIViewController {
         
         let data = [
               CustomData(title: "title", image: #imageLiteral(resourceName: "Lights") , url: "part"),
+              CustomData(title: "title", image: #imageLiteral(resourceName: "Gadget") , url: "part"),
               CustomData(title: "title", image: #imageLiteral(resourceName: "Cut") , url: "part"),
+              CustomData(title: "title", image: #imageLiteral(resourceName: "Engine") , url: "part"),
+              CustomData(title: "title", image: #imageLiteral(resourceName: "Engine") , url: "part"),
               CustomData(title: "title", image: #imageLiteral(resourceName: "Cut") , url: "part"),
-              CustomData(title: "title", image: #imageLiteral(resourceName: "Cut") , url: "part"),
-              CustomData(title: "title", image: #imageLiteral(resourceName: "Cut") , url: "part"),
-              CustomData(title: "title", image: #imageLiteral(resourceName: "Cut") , url: "part"),
-              CustomData(title: "title", image: #imageLiteral(resourceName: "Cut") , url: "part")
+              CustomData(title: "title", image: #imageLiteral(resourceName: "Lights") , url: "part"),
+              CustomData(title: "title", image: #imageLiteral(resourceName: "Gadget") , url: "part")
             
                 ]
         
@@ -50,7 +51,7 @@ class ServicesViewController: UIViewController {
             // FIXME: Add these to one call to avoid repeat setup
             view.addSubview(collectionView)
             collectionView.backgroundColor = .clear
-            collectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 260).isActive = true
+            collectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 240).isActive = true
             collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10).isActive = true
             collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10).isActive = true
             collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -0).isActive = true

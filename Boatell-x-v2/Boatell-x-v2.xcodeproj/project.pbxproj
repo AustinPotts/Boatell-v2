@@ -19,6 +19,8 @@
 		45DAD45B242D8AE000A646DE /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DAD45A242D8AE000A646DE /* UserProfileViewController.swift */; };
 		45DAD45E242D8B5A00A646DE /* ServiceHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DAD45D242D8B5A00A646DE /* ServiceHistoryTableViewCell.swift */; };
 		45DAD460242D8E7100A646DE /* RegisterProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DAD45F242D8E7100A646DE /* RegisterProfileViewController.swift */; };
+		45DAD462242DA74B00A646DE /* Service .swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DAD461242DA74B00A646DE /* Service .swift */; };
+		45DAD464242DA7ED00A646DE /* ServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DAD463242DA7ED00A646DE /* ServiceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		45DAD45A242D8AE000A646DE /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		45DAD45D242D8B5A00A646DE /* ServiceHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceHistoryTableViewCell.swift; sourceTree = "<group>"; };
 		45DAD45F242D8E7100A646DE /* RegisterProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProfileViewController.swift; sourceTree = "<group>"; };
+		45DAD461242DA74B00A646DE /* Service .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Service .swift"; sourceTree = "<group>"; };
+		45DAD463242DA7ED00A646DE /* ServiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				456A69AC241C712600EABE0D /* PartController.swift */,
+				45DAD463242DA7ED00A646DE /* ServiceController.swift */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -102,6 +107,7 @@
 		456A69AE241C714500EABE0D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				45DAD461242DA74B00A646DE /* Service .swift */,
 				456A69AF241C715300EABE0D /* Part.swift */,
 			);
 			path = Model;
@@ -153,7 +159,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1110;
 				LastUpgradeCheck = 1110;
-				ORGANIZATIONNAME = "Lambda School";
+				ORGANIZATIONNAME = "Potts Evolvements";
 				TargetAttributes = {
 					455F49DA24133E5300EEE574 = {
 						CreatedOnToolsVersion = 11.1;
@@ -196,7 +202,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45DAD462242DA74B00A646DE /* Service .swift in Sources */,
 				455F49F3241346B200EEE574 /* LoginViewController.swift in Sources */,
+				45DAD464242DA7ED00A646DE /* ServiceController.swift in Sources */,
 				455F49DF24133E5300EEE574 /* AppDelegate.swift in Sources */,
 				45DAD45B242D8AE000A646DE /* UserProfileViewController.swift in Sources */,
 				456A69A9241C6EA400EABE0D /* ServicesViewController.swift in Sources */,

@@ -37,17 +37,48 @@ class UserProfileViewController: UIViewController  {
         super.viewDidLoad()
 
          // User Views v1
-        userImage.layer.cornerRadius = 80
+        userImage.layer.cornerRadius = 82
         
-
-       
-        
-      
         // UIViews for User Options v2
         scheduleView.layer.cornerRadius = 20
         serviceView.layer.cornerRadius = 20
         yourBoatsView.layer.cornerRadius = 20
         settingsView.layer.cornerRadius = 20
+        
+        // Shadows for UIViews
+        scheduleView.layer.shadowColor = UIColor.white.cgColor
+        scheduleView.layer.shadowOpacity = 0.5
+        scheduleView.layer.shadowOffset = .zero
+        scheduleView.layer.shadowRadius = 10
+    
+        yourBoatsView.layer.shadowColor = UIColor.white.cgColor
+        yourBoatsView.layer.shadowOpacity = 0.5
+        yourBoatsView.layer.shadowOffset = .zero
+        yourBoatsView.layer.shadowRadius = 10
+        
+        settingsView.layer.shadowColor = UIColor.white.cgColor
+        settingsView.layer.shadowOpacity = 0.5
+        settingsView.layer.shadowOffset = .zero
+        settingsView.layer.shadowRadius = 10
+        
+        serviceView.layer.shadowColor = UIColor.white.cgColor
+        serviceView.layer.shadowOpacity = 0.5
+        serviceView.layer.shadowOffset = .zero
+        serviceView.layer.shadowRadius = 10
+        
+        // Borders for UIViews
+        scheduleView.layer.borderWidth = 1
+        scheduleView.layer.borderColor = UIColor.blue.cgColor
+        
+        serviceView.layer.borderWidth = 1
+        serviceView.layer.borderColor = UIColor.blue.cgColor
+        
+        settingsView.layer.borderWidth = 1
+        settingsView.layer.borderColor = UIColor.blue.cgColor
+        
+        yourBoatsView.layer.borderWidth = 1
+        yourBoatsView.layer.borderColor = UIColor.blue.cgColor
+        
         
         
     }

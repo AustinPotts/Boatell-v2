@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		453C863824350586001EE6E1 /* OwnerProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453C863724350586001EE6E1 /* OwnerProfileViewController.swift */; };
 		455F49DF24133E5300EEE574 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F49DE24133E5300EEE574 /* AppDelegate.swift */; };
 		455F49E124133E5300EEE574 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F49E024133E5300EEE574 /* SceneDelegate.swift */; };
 		455F49E624133E5300EEE574 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 455F49E424133E5300EEE574 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		453C863724350586001EE6E1 /* OwnerProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerProfileViewController.swift; sourceTree = "<group>"; };
 		455F49DB24133E5300EEE574 /* Boatell-x-v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Boatell-x-v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		455F49DE24133E5300EEE574 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		455F49E024133E5300EEE574 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				45DAD45A242D8AE000A646DE /* UserProfileViewController.swift */,
 				455F49F2241346B200EEE574 /* LoginViewController.swift */,
 				45DAD45F242D8E7100A646DE /* RegisterProfileViewController.swift */,
+				453C863724350586001EE6E1 /* OwnerProfileViewController.swift */,
 			);
 			path = "User View Controllers";
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				453C863824350586001EE6E1 /* OwnerProfileViewController.swift in Sources */,
 				45DAD462242DA74B00A646DE /* Service .swift in Sources */,
 				455F49F3241346B200EEE574 /* LoginViewController.swift in Sources */,
 				45DAD464242DA7ED00A646DE /* ServiceController.swift in Sources */,

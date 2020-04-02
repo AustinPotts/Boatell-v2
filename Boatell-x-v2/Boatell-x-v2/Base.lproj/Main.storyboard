@@ -478,8 +478,8 @@
                                             <constraint firstAttribute="height" constant="58.5" id="GMx-t4-jQM"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Client Appointments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgg-Yx-hPU">
-                                        <rect key="frame" x="77" y="21" width="228" height="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Appointment History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgg-Yx-hPU">
+                                        <rect key="frame" x="77" y="21" width="230" height="30"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -497,6 +497,9 @@
                                             <constraint firstAttribute="width" constant="374" id="ZUh-Ih-Q8t"/>
                                             <constraint firstAttribute="height" constant="72" id="aRX-uq-j1f"/>
                                         </constraints>
+                                        <connections>
+                                            <segue destination="sn7-yV-Jqa" kind="show" id="l0y-cU-4wt"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -689,11 +692,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="sn7-yV-Jqa" customClass="OwnerAppointmentsViewController" customModule="Boatell_x_v2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ymX-Ze-Svi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BoatelllV2 copy" translatesAutoresizingMaskIntoConstraints="NO" id="TcD-Zt-IIa">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mechanic copy" translatesAutoresizingMaskIntoConstraints="NO" id="fWS-DS-6dj">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
@@ -1022,5 +1025,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="d9O-C2-oZI"/>
+        <segue reference="l0y-cU-4wt"/>
     </inferredMetricsTieBreakers>
 </document>

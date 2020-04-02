@@ -21,7 +21,15 @@ class OwnerProfileViewController: UIViewController {
         super.viewDidLoad()
 
 
-            ownerImage.layer.cornerRadius = 85
+          //  ownerImage.layer.cornerRadius = 85
+        ownerImage.layer.borderWidth = 1
+        ownerImage.layer.borderColor = UIColor.white.cgColor
+        
+        ownerImage.contentMode = .scaleAspectFill
+        ownerImage.layer.cornerRadius = ownerImage.frame.height / 2
+        ownerImage.layer.masksToBounds = false
+        ownerImage.clipsToBounds = true
+        
             
             // UIViews for User Options v2
             appointmentsView.layer.cornerRadius = 20

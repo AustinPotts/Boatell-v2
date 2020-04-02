@@ -44,6 +44,8 @@ class OwnerAppointmentsViewController: UIViewController {
             
             override func viewDidLoad() {
                 super.viewDidLoad()
+                
+                
 
                 // FIXME: Add these to one call to avoid repeat setup
                 view.addSubview(collectionView)

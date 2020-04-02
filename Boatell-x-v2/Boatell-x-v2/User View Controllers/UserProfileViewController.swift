@@ -37,7 +37,15 @@ class UserProfileViewController: UIViewController  {
         super.viewDidLoad()
 
          // User Views v1
-        userImage.layer.cornerRadius = 82
+      //  userImage.layer.cornerRadius = 82
+        userImage.layer.borderWidth = 1
+        userImage.layer.borderColor = UIColor.white.cgColor
+        
+        userImage.contentMode = .scaleAspectFill
+        userImage.layer.cornerRadius = userImage.frame.height / 2
+        userImage.layer.masksToBounds = false
+        userImage.clipsToBounds = true
+               
         
         // UIViews for User Options v2
         scheduleView.layer.cornerRadius = 20

@@ -12,9 +12,20 @@ import FSCalendar
 class UserCalendarViewController: UIViewController {
 
     fileprivate weak var calendar: FSCalendar!
-
+    @IBOutlet var detailsView: UIView!
+    @IBOutlet var serviceNotesTextField: UITextView!
+    @IBOutlet var confirmAppointmentButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // button
+        confirmAppointmentButton.layer.cornerRadius = 20
+        
+        
+        //Details About Appointment
+        detailsView.layer.cornerRadius = 20
+        serviceNotesTextField.layer.cornerRadius = 20
 
         // Do any additional setup after loading the view.
         let calendar = FSCalendar(frame: CGRect(x: 0, y: 0, width: 320, height: 300))
@@ -28,7 +39,7 @@ class UserCalendarViewController: UIViewController {
         view.addSubview(calendar)
         self.calendar = calendar
         
-        calendar.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -230).isActive = true
+        calendar.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -240).isActive = true
       //  calendar.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         
         

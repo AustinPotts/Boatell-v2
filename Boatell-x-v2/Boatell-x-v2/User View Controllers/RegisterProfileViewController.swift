@@ -37,12 +37,14 @@ class RegisterProfileViewController: UIViewController {
                 return
             }
             
+            guard let uid = user?.user.uid else { return }
+            
             // Successfully Registered Value
             var ref: DatabaseReference!
             
             ref = Database.database().reference(fromURL: "https://boatell-v2.firebaseio.com/")
             
-            let userRef = ref.child("users")
+            let userRef = ref.child("users").child(uid)
             
             let values = ["name": name, "email": email]
             

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Firebase
 
 struct CustomData {
     var title: String
@@ -44,9 +44,17 @@ class ServicesViewController: UIViewController {
              return cv
          }()
         
-        
+   
+    
         override func viewDidLoad() {
             super.viewDidLoad()
+            
+            
+            //MARK: - Check if user is singed in FIXME
+            if Auth.auth().currentUser?.uid == nil {
+               self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+            }
+            
 
             // FIXME: Add these to one call to avoid repeat setup
             view.addSubview(collectionView)
@@ -60,7 +68,30 @@ class ServicesViewController: UIViewController {
             collectionView.delegate = self
             collectionView.dataSource = self //Methods wont run if these arent called
         }
+    
 
+ 
+
+    
+    
+    @IBAction func logoutTapped(_ sender: Any) {
+            do {
+                  try Auth.auth().signOut()
+              } catch let logoutError{
+                  print(logoutError)
+              }
+              
+            //  let loginController = LoginViewController()
+
+
+    self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+      
+    
+        
+    }
+    
+
+    
 }
 
 

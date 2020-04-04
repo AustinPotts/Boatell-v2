@@ -87,7 +87,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="PJM-Cr-d6E" kind="show" id="Bib-Y2-pum"/>
+                                    <action selector="loginTapped:" destination="evk-mR-Mrv" eventType="touchUpInside" id="KH2-gf-dOY"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIF-Pk-fKa">
@@ -142,7 +142,10 @@
                         <viewLayoutGuide key="safeArea" id="uIm-0d-fRZ"/>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="Shl-zZ-9Ta" id="gMw-OW-eSu"/>
                         <outlet property="loginButton" destination="8zq-Ag-IVk" id="aVG-KD-dF8"/>
+                        <outlet property="passwordTextField" destination="oFb-JS-Z9y" id="O4q-tP-SrU"/>
+                        <segue destination="PJM-Cr-d6E" kind="show" identifier="LogInSegue" id="nXp-Hz-SAW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="22h-lp-abG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -185,6 +188,20 @@
                                     <constraint firstAttribute="width" constant="414" id="rfm-q8-bzA"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGi-aj-jjH">
+                                <rect key="frame" x="12" y="9" width="62" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="WlQ-rr-2VV"/>
+                                    <constraint firstAttribute="height" constant="30" id="YBv-Yu-s73"/>
+                                </constraints>
+                                <state key="normal" title="LOGOUT">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutTapped:" destination="0xl-yj-2mW" eventType="touchUpInside" id="Nog-qv-hO6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -194,7 +211,9 @@
                             <constraint firstItem="psR-px-Xj9" firstAttribute="leading" secondItem="KoN-IG-gLe" secondAttribute="leading" constant="24" id="St2-gU-fJJ"/>
                             <constraint firstItem="BrP-nE-cCc" firstAttribute="top" secondItem="KoN-IG-gLe" secondAttribute="top" constant="137" id="YQv-Ke-2GK"/>
                             <constraint firstItem="KoN-IG-gLe" firstAttribute="trailing" secondItem="psR-px-Xj9" secondAttribute="trailing" constant="23" id="ZzT-gl-aMs"/>
+                            <constraint firstItem="NGi-aj-jjH" firstAttribute="leading" secondItem="KoN-IG-gLe" secondAttribute="leading" constant="12" id="dwk-AO-vQs"/>
                             <constraint firstItem="KgB-6k-oPi" firstAttribute="top" secondItem="oyD-EK-pKT" secondAttribute="top" id="f5d-Wr-alF"/>
+                            <constraint firstItem="NGi-aj-jjH" firstAttribute="top" secondItem="KoN-IG-gLe" secondAttribute="top" constant="9" id="gMV-xQ-TlP"/>
                             <constraint firstItem="8eK-Od-u11" firstAttribute="top" secondItem="oyD-EK-pKT" secondAttribute="top" id="hNK-bc-hSe"/>
                             <constraint firstAttribute="bottom" secondItem="KgB-6k-oPi" secondAttribute="bottom" id="hxH-f9-Dje"/>
                             <constraint firstItem="8eK-Od-u11" firstAttribute="leading" secondItem="KoN-IG-gLe" secondAttribute="leading" id="mjE-ly-FRz"/>
@@ -1107,7 +1126,7 @@
         <image name="person.2.fill" catalog="system" width="64" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="d9O-C2-oZI"/>
+        <segue reference="nXp-Hz-SAW"/>
         <segue reference="l0y-cU-4wt"/>
     </inferredMetricsTieBreakers>
 </document>

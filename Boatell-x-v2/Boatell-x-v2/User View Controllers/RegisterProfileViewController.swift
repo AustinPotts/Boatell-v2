@@ -38,13 +38,15 @@ class RegisterProfileViewController: UIViewController {
             }
             
             // Successfully Registered Value
-                    var ref: DatabaseReference!
+            var ref: DatabaseReference!
             
-                ref = Database.database().reference(fromURL: "https://boatell-v2.firebaseio.com/")
+            ref = Database.database().reference(fromURL: "https://boatell-v2.firebaseio.com/")
+            
+            let userRef = ref.child("users")
             
             let values = ["name": name, "email": email]
             
-            ref.updateChildValues(values) { (error, refer) in
+            userRef.updateChildValues(values) { (error, refer) in
                 if let error = error {
                     print("error child values: \(error)")
                     return

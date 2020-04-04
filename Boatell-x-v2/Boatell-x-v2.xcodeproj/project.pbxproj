@@ -11,6 +11,7 @@
 		453C863824350586001EE6E1 /* OwnerProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453C863724350586001EE6E1 /* OwnerProfileViewController.swift */; };
 		453C863A243518F6001EE6E1 /* OwnerAppointmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453C8639243518F6001EE6E1 /* OwnerAppointmentsViewController.swift */; };
 		453C863C24357CB0001EE6E1 /* UserCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453C863B24357CB0001EE6E1 /* UserCalendarViewController.swift */; };
+		453C863E2438E7FA001EE6E1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 453C863D2438E7FA001EE6E1 /* GoogleService-Info.plist */; };
 		455F49DF24133E5300EEE574 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F49DE24133E5300EEE574 /* AppDelegate.swift */; };
 		455F49E124133E5300EEE574 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F49E024133E5300EEE574 /* SceneDelegate.swift */; };
 		455F49E624133E5300EEE574 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 455F49E424133E5300EEE574 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		453C863724350586001EE6E1 /* OwnerProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerProfileViewController.swift; sourceTree = "<group>"; };
 		453C8639243518F6001EE6E1 /* OwnerAppointmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerAppointmentsViewController.swift; sourceTree = "<group>"; };
 		453C863B24357CB0001EE6E1 /* UserCalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCalendarViewController.swift; sourceTree = "<group>"; };
+		453C863D2438E7FA001EE6E1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		455F49DB24133E5300EEE574 /* Boatell-x-v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Boatell-x-v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		455F49DE24133E5300EEE574 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		455F49E024133E5300EEE574 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				455F49E424133E5300EEE574 /* Main.storyboard */,
 				455F49E724133E5500EEE574 /* Assets.xcassets */,
 				455F49E924133E5500EEE574 /* LaunchScreen.storyboard */,
+				453C863D2438E7FA001EE6E1 /* GoogleService-Info.plist */,
 				455F49EC24133E5500EEE574 /* Info.plist */,
 			);
 			path = "Boatell-x-v2";
@@ -225,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				455F49EB24133E5500EEE574 /* LaunchScreen.storyboard in Resources */,
+				453C863E2438E7FA001EE6E1 /* GoogleService-Info.plist in Resources */,
 				455F49E824133E5500EEE574 /* Assets.xcassets in Resources */,
 				455F49E624133E5300EEE574 /* Main.storyboard in Resources */,
 			);

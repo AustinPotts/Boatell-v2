@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>709797360869-povdbplpucqjpthc7h2d4b5t8hgq8amg.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.709797360869-povdbplpucqjpthc7h2d4b5t8hgq8amg</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAaeU4g818zBmK9ra7XlcyLDDx7NhPJaTM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>709797360869</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.flash.Boatell-x-v2</string>
+	<key>PROJECT_ID</key>
+	<string>boatell-v2</string>
+	<key>STORAGE_BUCKET</key>
+	<string>boatell-v2.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:709797360869:ios:a2ce491833bae2a25e500c</string>
+	<key>DATABASE_URL</key>
+	<string>https://boatell-v2.firebaseio.com</string>
+</dict>
+</plist>

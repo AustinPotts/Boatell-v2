@@ -400,6 +400,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="signUpTapped:" destination="oUg-Oy-IqT" eventType="touchUpInside" id="s3L-4G-3fj"/>
                                     <segue destination="PJM-Cr-d6E" kind="show" identifier="SignInSegue" id="d9O-C2-oZI"/>
                                 </connections>
                             </button>
@@ -512,7 +513,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="yzY-WB-7Og"/>
                     <connections>
+                        <outlet property="emailTextField" destination="jfI-46-SPZ" id="g19-Qb-5ps"/>
+                        <outlet property="passwordTextField" destination="FUJ-q7-4QB" id="G1T-Ur-BvZ"/>
                         <outlet property="signUpButton" destination="c6D-xw-38d" id="ITa-gC-tNG"/>
+                        <outlet property="usernameTextField" destination="0TD-Fh-TW8" id="WPg-uY-grs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Gh-cq-SgS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

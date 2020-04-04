@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
 
@@ -15,6 +16,14 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        
+        
+//        var ref: DatabaseReference!
+//
+//        ref = Database.database().reference(fromURL: "https://boatell-v2.firebaseio.com/")
+//        ref.updateChildValues(["some value": 123123])
+        
         loginButton.layer.cornerRadius = 20
     }
     

@@ -29,12 +29,28 @@ class RegisterProfileViewController: UIViewController {
     
     func handleRegister() {
         
-        guard let email = emailTextField.text, let password = passwordTextField.text else { return }
+        guard let email = emailTextField.text, let password = passwordTextField.text, let name = usernameTextField.text else { return }
         
         Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
             if let error = error {
                 print("Error: \(error)")
                 return
+            }
+            
+            // Successfully Registered Value
+                    var ref: DatabaseReference!
+            
+                ref = Database.database().reference(fromURL: "https://boatell-v2.firebaseio.com/")
+            
+            let values = ["name": name, "email": email]
+            
+            ref.updateChildValues(values) { (error, refer) in
+                if let error = error {
+                    print("error child values: \(error)")
+                    return
+                }
+                
+                print("Saved user successfully into firebase db")
             }
             
         }

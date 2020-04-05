@@ -11,6 +11,7 @@
 		450CA04A243968ED00EEA40F /* MessagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450CA049243968ED00EEA40F /* MessagesTableViewController.swift */; };
 		450CA04C24396CC200EEA40F /* NewMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450CA04B24396CC200EEA40F /* NewMessageTableViewController.swift */; };
 		450CA04E2439734F00EEA40F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450CA04D2439734F00EEA40F /* User.swift */; };
+		450CA051243A3E6600EEA40F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450CA050243A3E6600EEA40F /* Extensions.swift */; };
 		453C863824350586001EE6E1 /* OwnerProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453C863724350586001EE6E1 /* OwnerProfileViewController.swift */; };
 		453C863A243518F6001EE6E1 /* OwnerAppointmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453C8639243518F6001EE6E1 /* OwnerAppointmentsViewController.swift */; };
 		453C863C24357CB0001EE6E1 /* UserCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453C863B24357CB0001EE6E1 /* UserCalendarViewController.swift */; };
@@ -36,6 +37,7 @@
 		450CA049243968ED00EEA40F /* MessagesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesTableViewController.swift; sourceTree = "<group>"; };
 		450CA04B24396CC200EEA40F /* NewMessageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageTableViewController.swift; sourceTree = "<group>"; };
 		450CA04D2439734F00EEA40F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		450CA050243A3E6600EEA40F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		453C863724350586001EE6E1 /* OwnerProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerProfileViewController.swift; sourceTree = "<group>"; };
 		453C8639243518F6001EE6E1 /* OwnerAppointmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerAppointmentsViewController.swift; sourceTree = "<group>"; };
 		453C863B24357CB0001EE6E1 /* UserCalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCalendarViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +74,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		450CA04F243A3E3F00EEA40F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				450CA050243A3E6600EEA40F /* Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		455F49D224133E5200EEE574 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +103,7 @@
 		455F49DD24133E5300EEE574 /* Boatell-x-v2 */ = {
 			isa = PBXGroup;
 			children = (
+				450CA04F243A3E3F00EEA40F /* Helpers */,
 				45DAD45C242D8B3700A646DE /* Views */,
 				45DAD459242D8AB400A646DE /* User View Controllers */,
 				456A69AE241C714500EABE0D /* Model */,
@@ -293,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				453C863A243518F6001EE6E1 /* OwnerAppointmentsViewController.swift in Sources */,
+				450CA051243A3E6600EEA40F /* Extensions.swift in Sources */,
 				453C863824350586001EE6E1 /* OwnerProfileViewController.swift in Sources */,
 				45DAD462242DA74B00A646DE /* Service .swift in Sources */,
 				455F49F3241346B200EEE574 /* LoginViewController.swift in Sources */,

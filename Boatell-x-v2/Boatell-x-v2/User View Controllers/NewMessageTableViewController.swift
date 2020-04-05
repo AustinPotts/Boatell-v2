@@ -69,25 +69,30 @@ class NewMessageTableViewController: UITableViewController {
         cell.imageView?.image = UIImage(named: "User")
     
         
+        cell.imageView?.layer.masksToBounds = true
+        cell.imageView?.layer.cornerRadius = 50.0
+        
         
         
         if let profileImageUrl = user.profileImageURL {
             
-            let url = URL(string: profileImageUrl)
+            cell.imageView?.loadImageUsingCacheWithUrlString(urlString: profileImageUrl)
             
-            URLSession.shared.dataTask(with: url!) { (data, response, error) in
-                
-                if let error = error {
-                    print("Error getting image: \(error)")
-                    return
-                }
-                
-                DispatchQueue.main.async {
-                     cell.imageView?.image = UIImage(data: data!)
-                }
-               
-                
-            }.resume()
+//            let url = URL(string: profileImageUrl)
+//
+//            URLSession.shared.dataTask(with: url!) { (data, response, error) in
+//
+//                if let error = error {
+//                    print("Error getting image: \(error)")
+//                    return
+//                }
+//
+//                DispatchQueue.main.async {
+//                     cell.imageView?.image = UIImage(data: data!)
+//                }
+//
+//
+//            }.resume()
             
         }
 

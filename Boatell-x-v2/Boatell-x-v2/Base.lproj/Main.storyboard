@@ -145,7 +145,7 @@
                         <outlet property="emailTextField" destination="Shl-zZ-9Ta" id="gMw-OW-eSu"/>
                         <outlet property="loginButton" destination="8zq-Ag-IVk" id="aVG-KD-dF8"/>
                         <outlet property="passwordTextField" destination="oFb-JS-Z9y" id="O4q-tP-SrU"/>
-                        <segue destination="PJM-Cr-d6E" kind="show" identifier="LogInSegue" id="nXp-Hz-SAW"/>
+                        <segue destination="SWN-4A-JBn" kind="show" identifier="LogInSegue" id="tsw-NU-gSB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="22h-lp-abG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -334,6 +334,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UC5-Gp-1IC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1376.8115942028987" y="805.58035714285711"/>
+        </scene>
+        <!--Name-->
+        <scene sceneID="Qp2-Z6-a64">
+            <objects>
+                <tableViewController modalPresentationStyle="fullScreen" id="YXn-IF-Sdq" customClass="MessagesTableViewController" customModule="Boatell_x_v2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="N3n-gN-5mj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="jny-l7-wXe">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jny-l7-wXe" id="3RL-MA-N8N">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="YXn-IF-Sdq" id="GxR-2e-n3k"/>
+                            <outlet property="delegate" destination="YXn-IF-Sdq" id="y4k-3W-taE"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Name" id="qAO-Bd-D0Q">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="xWu-5I-u7m">
+                            <connections>
+                                <action selector="logoutTapped:" destination="YXn-IF-Sdq" id="2dc-7b-gb6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Am8-Uq-5cd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2289.8550724637685" y="1531.4732142857142"/>
         </scene>
         <!--Register Profile View Controller-->
         <scene sceneID="avx-Un-HxR">
@@ -1107,6 +1142,25 @@
             </objects>
             <point key="canvasLocation" x="861" y="-2190"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qnq-wR-t7H">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="SWN-4A-JBn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="eSy-TZ-pL4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xtT-S5-TxN">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YXn-IF-Sdq" kind="relationship" relationship="rootViewController" id="cW7-XX-XFq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I1C-Da-3ss" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1379.7101449275362" y="1531.4732142857142"/>
+        </scene>
     </scenes>
     <resources>
         <image name="BoatLogoWhite copy" width="200" height="200"/>
@@ -1126,7 +1180,6 @@
         <image name="person.2.fill" catalog="system" width="64" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nXp-Hz-SAW"/>
         <segue reference="l0y-cU-4wt"/>
     </inferredMetricsTieBreakers>
 </document>

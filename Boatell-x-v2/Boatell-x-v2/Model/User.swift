@@ -14,6 +14,7 @@ import Foundation
     
    @objc var name: String?
    @objc var email: String?
+   @objc var profileImageURL: String?
     
     
 }

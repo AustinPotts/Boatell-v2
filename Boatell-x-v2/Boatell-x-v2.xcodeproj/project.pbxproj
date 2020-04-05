@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		17AEEA81E1FE4E7A75E95736 /* Pods_Boatell_x_v2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5F04E0019B938566B9BF46 /* Pods_Boatell_x_v2.framework */; };
 		450CA04A243968ED00EEA40F /* MessagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450CA049243968ED00EEA40F /* MessagesTableViewController.swift */; };
+		450CA04C24396CC200EEA40F /* NewMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450CA04B24396CC200EEA40F /* NewMessageTableViewController.swift */; };
+		450CA04E2439734F00EEA40F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450CA04D2439734F00EEA40F /* User.swift */; };
 		453C863824350586001EE6E1 /* OwnerProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453C863724350586001EE6E1 /* OwnerProfileViewController.swift */; };
 		453C863A243518F6001EE6E1 /* OwnerAppointmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453C8639243518F6001EE6E1 /* OwnerAppointmentsViewController.swift */; };
 		453C863C24357CB0001EE6E1 /* UserCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453C863B24357CB0001EE6E1 /* UserCalendarViewController.swift */; };
@@ -32,6 +34,8 @@
 /* Begin PBXFileReference section */
 		0D5F04E0019B938566B9BF46 /* Pods_Boatell_x_v2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Boatell_x_v2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		450CA049243968ED00EEA40F /* MessagesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesTableViewController.swift; sourceTree = "<group>"; };
+		450CA04B24396CC200EEA40F /* NewMessageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageTableViewController.swift; sourceTree = "<group>"; };
+		450CA04D2439734F00EEA40F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		453C863724350586001EE6E1 /* OwnerProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerProfileViewController.swift; sourceTree = "<group>"; };
 		453C8639243518F6001EE6E1 /* OwnerAppointmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerAppointmentsViewController.swift; sourceTree = "<group>"; };
 		453C863B24357CB0001EE6E1 /* UserCalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCalendarViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +131,7 @@
 			children = (
 				45DAD461242DA74B00A646DE /* Service .swift */,
 				456A69AF241C715300EABE0D /* Part.swift */,
+				450CA04D2439734F00EEA40F /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 				453C8639243518F6001EE6E1 /* OwnerAppointmentsViewController.swift */,
 				453C863B24357CB0001EE6E1 /* UserCalendarViewController.swift */,
 				450CA049243968ED00EEA40F /* MessagesTableViewController.swift */,
+				450CA04B24396CC200EEA40F /* NewMessageTableViewController.swift */,
 			);
 			path = "User View Controllers";
 			sourceTree = "<group>";
@@ -290,8 +296,10 @@
 				453C863824350586001EE6E1 /* OwnerProfileViewController.swift in Sources */,
 				45DAD462242DA74B00A646DE /* Service .swift in Sources */,
 				455F49F3241346B200EEE574 /* LoginViewController.swift in Sources */,
+				450CA04C24396CC200EEA40F /* NewMessageTableViewController.swift in Sources */,
 				450CA04A243968ED00EEA40F /* MessagesTableViewController.swift in Sources */,
 				45DAD464242DA7ED00A646DE /* ServiceController.swift in Sources */,
+				450CA04E2439734F00EEA40F /* User.swift in Sources */,
 				455F49DF24133E5300EEE574 /* AppDelegate.swift in Sources */,
 				45DAD45B242D8AE000A646DE /* UserProfileViewController.swift in Sources */,
 				456A69A9241C6EA400EABE0D /* ServicesViewController.swift in Sources */,

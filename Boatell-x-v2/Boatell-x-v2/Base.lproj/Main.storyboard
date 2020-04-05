@@ -565,11 +565,22 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJf-Ha-vCr">
+                                <rect key="frame" x="159" y="90" width="96" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="mpw-7Q-iN0"/>
+                                    <constraint firstAttribute="width" constant="96" id="rLf-cC-VyL"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="cameraButtonTapped:" destination="oUg-Oy-IqT" eventType="touchUpInside" id="1gT-lY-nwE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="M5C-3e-0lm" firstAttribute="leading" secondItem="ncg-f2-0Wc" secondAttribute="leading" constant="20" id="0Zc-Fb-HaN"/>
                             <constraint firstItem="8Qi-hL-UjY" firstAttribute="trailing" secondItem="ncg-f2-0Wc" secondAttribute="trailing" id="1sA-V6-5cp"/>
+                            <constraint firstItem="uJf-Ha-vCr" firstAttribute="top" secondItem="ncg-f2-0Wc" secondAttribute="top" constant="46" id="2ZE-eG-dax"/>
                             <constraint firstItem="c6D-xw-38d" firstAttribute="leading" secondItem="ncg-f2-0Wc" secondAttribute="leading" constant="109" id="3dx-VL-sjT"/>
                             <constraint firstItem="0TD-Fh-TW8" firstAttribute="leading" secondItem="h2R-rH-UfO" secondAttribute="trailing" constant="8" id="3rw-gD-8Y8"/>
                             <constraint firstItem="FUJ-q7-4QB" firstAttribute="top" secondItem="7Ec-K6-ybo" secondAttribute="bottom" constant="41" id="5ys-YZ-PRZ"/>
@@ -596,7 +607,9 @@
                             <constraint firstItem="ncg-f2-0Wc" firstAttribute="trailing" secondItem="jfI-46-SPZ" secondAttribute="trailing" constant="61" id="ViQ-J5-Im1"/>
                             <constraint firstItem="A8m-nR-7S7" firstAttribute="leading" secondItem="ncg-f2-0Wc" secondAttribute="leading" constant="37" id="WAf-aE-Z05"/>
                             <constraint firstItem="pG0-VH-IHu" firstAttribute="top" secondItem="M5C-3e-0lm" secondAttribute="bottom" constant="1" id="b5m-jF-uWf"/>
+                            <constraint firstItem="uJf-Ha-vCr" firstAttribute="leading" secondItem="ncg-f2-0Wc" secondAttribute="leading" constant="159" id="d5N-c4-Lj6"/>
                             <constraint firstItem="ncg-f2-0Wc" firstAttribute="trailing" secondItem="k4m-Tw-XWl" secondAttribute="trailing" constant="62" id="eVH-Rd-tVu"/>
+                            <constraint firstItem="ncg-f2-0Wc" firstAttribute="trailing" secondItem="uJf-Ha-vCr" secondAttribute="trailing" constant="159" id="hTy-vG-9a2"/>
                             <constraint firstItem="ncg-f2-0Wc" firstAttribute="trailing" secondItem="c6D-xw-38d" secondAttribute="trailing" constant="109" id="heZ-JX-xHy"/>
                             <constraint firstItem="c6D-xw-38d" firstAttribute="top" secondItem="pG0-VH-IHu" secondAttribute="bottom" constant="52" id="hvu-tP-upP"/>
                             <constraint firstItem="tU6-cE-Ne8" firstAttribute="top" secondItem="Qd6-ED-l5v" secondAttribute="top" constant="24" id="iCc-0Z-VoH"/>
@@ -618,6 +631,7 @@
                     <navigationItem key="navigationItem" id="yzY-WB-7Og"/>
                     <connections>
                         <outlet property="emailTextField" destination="jfI-46-SPZ" id="g19-Qb-5ps"/>
+                        <outlet property="imager" destination="tU6-cE-Ne8" id="yGp-Ep-kGZ"/>
                         <outlet property="passwordTextField" destination="FUJ-q7-4QB" id="G1T-Ur-BvZ"/>
                         <outlet property="signUpButton" destination="c6D-xw-38d" id="ITa-gC-tNG"/>
                         <outlet property="usernameTextField" destination="0TD-Fh-TW8" id="WPg-uY-grs"/>

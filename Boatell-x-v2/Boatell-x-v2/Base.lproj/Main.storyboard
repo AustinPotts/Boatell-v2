@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -364,16 +365,104 @@
                                 <action selector="logoutTapped:" destination="YXn-IF-Sdq" id="2dc-7b-gb6"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="message" catalog="system" id="cY8-zv-ojc">
-                            <connections>
-                                <segue destination="SdK-Fe-WIE" kind="show" id="kfa-G3-mB0"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="message" catalog="system" id="cY8-zv-ojc">
+                                <connections>
+                                    <segue destination="SdK-Fe-WIE" kind="show" id="kfa-G3-mB0"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Item" image="book" catalog="system" id="UCF-X2-k1I">
+                                <connections>
+                                    <segue destination="n5R-y2-8v2" kind="show" id="xS3-XX-KOb"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Am8-Uq-5cd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2289.8550724637685" y="1531.4732142857142"/>
+        </scene>
+        <!--Chat Logs-->
+        <scene sceneID="iRh-Ji-BYb">
+            <objects>
+                <viewController id="n5R-y2-8v2" customClass="ChatLogsViewController" customModule="Boatell_x_v2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1SX-sR-icY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cbq-RN-y0k">
+                                <rect key="frame" x="0.0" y="733" width="414" height="89"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" borderStyle="roundedRect" placeholder="Enter Message..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pj2-jU-nQf">
+                                        <rect key="frame" x="8" y="27" width="398" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1FF-N7-HgV">
+                                        <rect key="frame" x="353" y="27" width="36" height="30"/>
+                                        <state key="normal" title="Send"/>
+                                        <connections>
+                                            <action selector="sendTapped:" destination="n5R-y2-8v2" eventType="touchUpInside" id="v9D-Rb-6bD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="89" id="3dJ-tf-sad"/>
+                                    <constraint firstAttribute="bottom" secondItem="Pj2-jU-nQf" secondAttribute="bottom" constant="28" id="7Fb-58-5Qn"/>
+                                    <constraint firstItem="Pj2-jU-nQf" firstAttribute="top" secondItem="Cbq-RN-y0k" secondAttribute="top" constant="27" id="8EE-qa-nPE"/>
+                                    <constraint firstAttribute="bottom" secondItem="1FF-N7-HgV" secondAttribute="bottom" constant="32" id="A1W-lQ-kds"/>
+                                    <constraint firstItem="Pj2-jU-nQf" firstAttribute="leading" secondItem="Cbq-RN-y0k" secondAttribute="leading" constant="8" id="dEV-9i-fRa"/>
+                                    <constraint firstAttribute="trailing" secondItem="1FF-N7-HgV" secondAttribute="trailing" constant="25" id="hSv-Hk-efy"/>
+                                    <constraint firstAttribute="width" constant="414" id="mDi-Y2-e0a"/>
+                                    <constraint firstItem="1FF-N7-HgV" firstAttribute="top" secondItem="Cbq-RN-y0k" secondAttribute="top" constant="27" id="sAc-xM-owL"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pj2-jU-nQf" secondAttribute="trailing" constant="8" id="xJa-FP-UhI"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="O1P-HJ-1b3">
+                                <rect key="frame" x="0.0" y="56" width="414" height="682"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pPF-f0-QFb">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="WPu-xi-r33">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="iJQ-al-cFf">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Cbq-RN-y0k" firstAttribute="trailing" secondItem="fOE-Iw-UW1" secondAttribute="trailing" id="246-YI-pOv"/>
+                            <constraint firstAttribute="bottom" secondItem="Cbq-RN-y0k" secondAttribute="bottom" constant="20" id="BfQ-0r-XXf"/>
+                            <constraint firstItem="O1P-HJ-1b3" firstAttribute="trailing" secondItem="fOE-Iw-UW1" secondAttribute="trailing" id="Jql-2r-QeM"/>
+                            <constraint firstItem="Cbq-RN-y0k" firstAttribute="leading" secondItem="fOE-Iw-UW1" secondAttribute="leading" id="KCG-bt-UyQ"/>
+                            <constraint firstItem="O1P-HJ-1b3" firstAttribute="top" secondItem="fOE-Iw-UW1" secondAttribute="top" id="KNa-u2-poc"/>
+                            <constraint firstAttribute="bottom" secondItem="Cbq-RN-y0k" secondAttribute="bottom" constant="20" symbolic="YES" id="M8h-f9-IIU"/>
+                            <constraint firstItem="fOE-Iw-UW1" firstAttribute="bottom" secondItem="O1P-HJ-1b3" secondAttribute="bottom" constant="70" id="QBc-K4-5i7"/>
+                            <constraint firstItem="O1P-HJ-1b3" firstAttribute="leading" secondItem="fOE-Iw-UW1" secondAttribute="leading" id="mla-mh-bmZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fOE-Iw-UW1"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Chat Logs" id="pj0-JW-Xk3"/>
+                    <connections>
+                        <outlet property="messageTextField" destination="Pj2-jU-nQf" id="9oJ-uG-6Gn"/>
+                        <outlet property="messagesCollectionView" destination="O1P-HJ-1b3" id="OQN-R4-9gw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xeC-0h-tLA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2289.8550724637685" y="2311.6071428571427"/>
         </scene>
         <!--New Message-->
         <scene sceneID="5TX-sK-aDC">

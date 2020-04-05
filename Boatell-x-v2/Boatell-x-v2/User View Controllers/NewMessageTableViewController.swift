@@ -19,7 +19,10 @@ class NewMessageTableViewController: UITableViewController {
 
         fetchUsers()
         
+        
     }
+    
+
     
     func fetchUsers() {
         Database.database().reference().child("users").observe(.childAdded, with: { (snapshot) in

@@ -18,6 +18,8 @@ class MessagesTableViewController: UITableViewController {
       
     }
     
+    
+    
     func checkIfUserLoggedIn(){
         //MARK: - Check if user is singed in FIXME
         if Auth.auth().currentUser?.uid == nil {
@@ -65,6 +67,20 @@ class MessagesTableViewController: UITableViewController {
     
         
     }
+    
+    @IBAction func chatTapped(_ sender: Any) {
+        
+        //showChatController()
+        
+    }
+    
+//    func showChatController() {
+//
+//        let chatLogController = ChatLogsViewController()
+//
+//        navigationController?.pushViewController(chatLogController, animated: true)
+//
+//    }
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

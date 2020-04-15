@@ -11,6 +11,11 @@ import Firebase
 
 class ChatLogsViewController: UIViewController {
 
+    var user: User? {
+        didSet{
+            navigationItem.title = user?.name
+        }
+    }
     
     @IBOutlet var messageTextField: UITextField!
     
@@ -20,9 +25,16 @@ class ChatLogsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        // messageTextField.delegate! = self
+        
+    }
 
   
     
@@ -36,8 +48,9 @@ class ChatLogsViewController: UIViewController {
         //guard let message = messageTextField.text else {return}
         
         let ref = Database.database().reference().child("messages")
+        let childRef = ref.childByAutoId()
         let values = ["text": messageTextField.text!]
-        ref.updateChildValues(values)
+        childRef.updateChildValues(values)
         
     }
     
@@ -55,3 +68,11 @@ class ChatLogsViewController: UIViewController {
 //
 //
 //}
+
+
+extension ChatLogsViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        handleSend()
+        return true
+    }
+}

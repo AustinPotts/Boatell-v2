@@ -26,7 +26,7 @@ class LoginViewController: UIViewController {
 //        ref = Database.database().reference(fromURL: "https://boatell-v2.firebaseio.com/")
 //        ref.updateChildValues(["some value": 123123])
         
-//        loginButton.layer.cornerRadius = 20
+       loginButton.layer.cornerRadius = 20
     }
     
     func handleLogIn() {

@@ -64,5 +64,7 @@
 	<string>Select image for profile</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Access to image for profile</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 </dict>
 </plist>

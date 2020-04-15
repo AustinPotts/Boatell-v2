@@ -12,6 +12,8 @@ import Firebase
 class NewMessageTableViewController: UITableViewController {
 
     
+    var messagesController: MessagesTableViewController?
+    
     var users = [User]()
     
     override func viewDidLoad() {
@@ -100,6 +102,19 @@ class NewMessageTableViewController: UITableViewController {
         }
 
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       
+        navigationController?.popViewController(animated: true)
+        
+        guard let messagesController = messagesController else {
+            print("Error: No Messages Controller Passed")
+            return
+            
+        }
+        let user = self.users[indexPath.row]
+        messagesController.showChatControllerForUser(user: user)
     }
 
 

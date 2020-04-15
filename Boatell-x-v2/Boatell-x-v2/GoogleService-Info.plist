@@ -19,18 +19,20 @@
 	<key>STORAGE_BUCKET</key>
 	<string>boatell-v2.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_GCM_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:709797360869:ios:a2ce491833bae2a25e500c</string>
 	<key>DATABASE_URL</key>
 	<string>https://boatell-v2.firebaseio.com</string>
+	<key></key>
+	<string></string>
 </dict>
 </plist>
